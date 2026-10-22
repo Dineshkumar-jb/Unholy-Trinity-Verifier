@@ -1,0 +1,23 @@
+{
+  "name": "blockchain_project",
+  "version": "1.0.0",
+  "description": "A full-stack certificate verification application built with MongoDB, Express, React, and Node.js.",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "start": "node start-all.js",
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run blockchain/scripts/deploy.js --network localhost",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "hardhat": "^2.29.1"
+  }
+}

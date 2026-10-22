@@ -1,0 +1,260 @@
+/* ==========================================================================
+   UNHOLY TRINITY VERIFIER — CLEAN WHITE / LIGHT SERVICE DESIGN SYSTEM
+   Theme: Crisp Academic White, Deep Navy Ink, Precision Sky Cyan, Tri-Fold Trust
+   ========================================================================== */
+
+:root {
+  /* Surfaces & Canvas (Crisp White & Clean Slates) */
+  --bg-canvas: #F8FAFC;
+  --bg-canvas-subtle: #F1F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-surface-card: #FFFFFF;
+  --bg-surface-hover: #F8FAFC;
+  --bg-parchment-dark: #FFFFFF;
+  --bg-input: #FFFFFF;
+
+  /* Ink & Typography (Deep Slate & Navy) */
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-caption: #94A3B8;
+  --text-dim: #CBD5E1;
+
+  /* Precision Accents (Professional Sky Cyan & Royal Blue) */
+  --accent-cyan: #0284C7;
+  --accent-cyan-hover: #0369A1;
+  --accent-cyan-subtle: #E0F2FE;
+  --accent-cyan-border: #BAE6FD;
+  --accent-cyan-glow: rgba(2, 132, 199, 0.15);
+
+  --accent-blue: #2563EB;
+  --accent-blue-hover: #1D4ED8;
+
+  /* Official Seal Amber / Gold */
+  --accent-gold: #D97706;
+  --accent-gold-subtle: #FEF3C7;
+  --accent-gold-border: #FDE68A;
+
+  /* Semantic Status Feedback */
+  --verified-green: #059669;
+  --verified-green-bg: #ECFDF5;
+  --verified-green-border: #A7F3D0;
+  --verified-green-text: #065F46;
+
+  --danger-red: #DC2626;
+  --danger-red-bg: #FEF2F2;
+  --danger-red-border: #FECACA;
+  --danger-red-text: #991B1B;
+
+  --warning-amber: #D97706;
+  --warning-amber-bg: #FFFBEB;
+  --warning-amber-border: #FDE68A;
+
+  /* Borders & Rules */
+  --border-subtle: #E2E8F0;
+  --border-slate: #CBD5E1;
+  --border-medium: #CBD5E1;
+  --border-focus: #0284C7;
+
+  /* Typography Fonts */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-crest: 'Cinzel', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Elevation Shadows */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-elevated: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+}
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+}
+
+/* App Layout Skeleton */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-canvas);
+  position: relative;
+}
+
+.app-main {
+  flex: 1;
+  position: relative;
+}
+
+/* Common Container */
+.academic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   UNHOLY TRINITY VERIFIER — CLEAN WHITE / LIGHT FOOTER
+   ========================================================================== */
+
+.app-footer {
+  background-color: #F8FAFC;
+  color: #64748B;
+  border-top: 1px solid var(--border-subtle);
+  padding: 3.5rem 0 2rem;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.footer-brand h4 {
+  font-family: var(--font-crest);
+  color: #0F172A;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.footer-brand p {
+  color: #475569;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  max-width: 460px;
+}
+
+.footer-column h5 {
+  color: #0F172A;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: #475569;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.15s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-cyan);
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: #64748B;
+}
+
+.footer-node-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #065F46;
+  background-color: #ECFDF5;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #A7F3D0;
+}
+
+.node-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--verified-green);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(5, 150, 105, 0.5);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-surface-elevated);
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-subtle);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-surface-hover);
+}
+
+/* Focus States for Accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
