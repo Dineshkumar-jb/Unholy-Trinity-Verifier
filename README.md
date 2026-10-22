@@ -1,6 +1,12 @@
 # Unholy Trinity Verifier
 ### Decentralized Multi-Tier Verification Protocol for Non-Fungible Academic Credentials
 
+[![Live Website](https://img.shields.io/badge/Live_Website-Online-0284C7?style=for-the-badge&logo=githubpages&logoColor=white)](https://Dineshkumar-jb.github.io/Unholy-Trinity-Verifier/)
+
+> 🌐 **Public Live Demonstration:**  
+> **[https://Dineshkumar-jb.github.io/Unholy-Trinity-Verifier/](https://Dineshkumar-jb.github.io/Unholy-Trinity-Verifier/)**  
+> *Anyone worldwide can open this link to test live certificate issuance, QR vision scanning, and cryptographic verification!*
+
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.20-363636?logo=solidity)](https://soliditylang.org/)
 [![EVM Cancun](https://img.shields.io/badge/EVM_Execution-Cancun_(ChainID_31337)-orange?logo=ethereum)](https://ethereum.org/)
 [![OpenZeppelin](https://img.shields.io/badge/OpenZeppelin-v5.6.1-4E5EE4?logo=openzeppelin)](https://openzeppelin.com/)
